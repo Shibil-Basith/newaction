@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS and JavaScript Example</title>
+</head>
+<!-- Inline CSS on the body to style the background and center layout -->
+<body style="background-color: #f0f2f5; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <!-- Inline CSS on the container card -->
+    <div style="background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; max-width: 400px; width: 100%;">
+        
+        <!-- Inline CSS changing text color and margin -->
+        <h1 style="color: #333333; margin-bottom: 10px;">Interactive Card</h1>
+        
+        <!-- Inline CSS defining paragraph color and font size -->
+        <p id="text-message" style="color: #666666; font-size: 16px; margin-bottom: 20px;">
+            Click the button below to see the magic happen!
+        </p>
+
+        <!-- Inline CSS for button styling -->
+        <!-- Inline JavaScript (onclick) to dynamically alter content, style, and trigger an alert -->
+        <button 
+            style="background-color: #007bff; color: white; border: none; padding: 12px 24px; font-size: 16px; border-radius: 6px; cursor: pointer; transition: background 0.3s;"
+            onclick="
+                const targetText = document.getElementById('text-message');
+                targetText.innerHTML = '🎉 Success! The text and styles were modified using inline JavaScript.';
+                targetText.style.color = '#28a745';
+                targetText.style.fontWeight = 'bold';
+                alert('JavaScript Executed Successfully!');
+            ">
+            Click Me
+        </button>
+
+    </div>
+
+</body>
+</html>
+
